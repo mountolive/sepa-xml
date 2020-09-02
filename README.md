@@ -4,6 +4,8 @@ This module gives you a wrapper around generating a SEPA XML file. It works by u
 
 It does, however, run the final result through a validator and will throw an error if there's an issue with it!
 
+This fork can take a ibanValidator as a parameter.
+
 ## Formats
 
 These can be found in the `formats` folders, and are simple Handlebars files representing the XML schema.
@@ -52,7 +54,8 @@ Example pain.008.001.02
 
 ```javascript
 var SepaXML = require('sepa-xml');
-var XMLFile = new SepaXML('pain.008.001.02');
+var XMLFile = new SepaXML({ format: 'pain.008.001.02' });
+// You could use new SepaXML({ format: 'pain.008.001.02', ibanValidator: { isValid: iban => true } }) ibanValidator must implement isValid 
 
 // This sets the header data in the file
 XMLFile.setHeaderInfo({
