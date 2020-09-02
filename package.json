@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/mgmco/sepa-xml.git"
+    "url": "git+ssh://git@github.com/mountolive/sepa-xml.git"
   },
   "keywords": [
     "sepa",
@@ -20,13 +20,12 @@
   "author": "Mike Timofiiv (http://fiiv.io)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mgmco/sepa-xml/issues"
+    "url": "https://github.com/mountolive/sepa-xml/issues"
   },
-  "homepage": "https://github.com/mgmco/sepa-xml#readme",
+  "homepage": "https://github.com/mountolive/sepa-xml#readme",
   "dependencies": {
     "big.js": "^3.2.0",
-    "handlebars": "^4.7.3",
-    "iban": "0.0.12"
+    "handlebars": "^4.7.3"
   },
   "devDependencies": {
     "chai": "^3.2.0",

@@ -18,7 +18,7 @@ describe('Use default format', function () {
 });
 
 describe('Works with the `pain.001.001.03` format', function() {
-  var sepaxml = new SepaXML('pain.001.001.03');
+  var sepaxml = new SepaXML({ format: 'pain.001.001.03' });
   sepaxml.setHeaderInfo({
     messageId: 'ABC123',
     initiator: 'SepaXML'
@@ -66,7 +66,7 @@ describe('Works with the `pain.001.001.03` format', function() {
 
   describe('Validations', function () {
     it('should return validation', function(done) {
-      var emptySepa = new SepaXML('pain.001.001.03');
+      var emptySepa = new SepaXML({ format: 'pain.001.001.03' });
 
       emptySepa.compile(function (err, out) {
         expect(out).to.be.undefined;
@@ -88,7 +88,7 @@ describe('Works with the `pain.001.001.03` format', function() {
     });
 
     it('should use a bad format', function (done) {
-      var badformatsepaxml = new SepaXML('pain.001.001.04');
+      var badformatsepaxml = new SepaXML({ format: 'pain.001.001.04' });
       badformatsepaxml.setHeaderInfo({
         messageId: 'ABC123',
         initiator: 'SepaXML'
