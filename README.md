@@ -4,7 +4,7 @@ This module gives you a wrapper around generating a SEPA XML file. It works by u
 
 It does, however, run the final result through a validator and will throw an error if there's an issue with it!
 
-This fork can take a ibanValidator as a parameter.
+This fork can take an `ibanValidator` as a parameter.
 
 ## Formats
 
