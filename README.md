@@ -55,7 +55,9 @@ Example pain.008.001.02
 ```javascript
 var SepaXML = require('sepa-xml');
 var XMLFile = new SepaXML({ format: 'pain.008.001.02' });
-// You could use new SepaXML({ format: 'pain.008.001.02', ibanValidator: { isValid: iban => true } }) ibanValidator must implement isValid 
+// You could use new
+// SepaXML({ format: 'pain.008.001.02', ibanValidator: { isValid: iban => true } })
+// ibanValidator must implement isValid
 
 // This sets the header data in the file
 XMLFile.setHeaderInfo({
